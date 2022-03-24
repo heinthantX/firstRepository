@@ -1,0 +1,132 @@
+.review__container {
+  padding-top: 40px;
+  width: 60%;
+  height: 50vh;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.review__container h1 {
+  font-size: 2.5rem;
+}
+
+.review__container p span {
+  color: blue;
+  font-size: 3.5rem;
+}
+
+.review__container p {
+  font-size: 1.2rem;
+}
+
+.review-user {
+  margin-top: 30px;
+  display: flex;
+  text-align: start;
+}
+
+.review-user img {
+  width: 50px;
+  margin-right: 5px;
+}
+
+.review-user h5 {
+  font-size: 0.9rem;
+}
+
+.review-user h6 {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.review-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.review-arrow i {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.arrow-left {
+  position: absolute;
+  top: 60%;
+  left: -20px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 60%;
+  right: -20px;
+}
+
+.review-social__conatainer {
+  color: #4169e1;
+  font-size: 1.2rem;
+  height: 18vh;
+  margin: auto;
+  padding-bottom: 30px;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.review-social__conatainer div {
+  display: flex;
+}
+.review-social__conatainer i {
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  .review__container {
+    height: 40vh;
+    width: 90%;
+    text-align: start;
+    align-items: flex-start;
+  }
+  .review__container div:nth-child(2) {
+    align-self: center;
+  }
+
+  .review-arrow {
+    display: none;
+  }
+
+  .review-social__conatainer {
+    width: 90%;
+    margin: auto;
+    font-size: 0.9rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 600px) and (max-width: 1200px) {
+  .review__container {
+    width: 80%;
+    height: 30vh;
+  }
+
+  .review-social__conatainer {
+    width: 80%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 600px) and (max-width: 1200px) {
+  .review__container {
+    width: 80%;
+  }
+
+  .review-social__conatainer {
+    width: 80%;
+  }
+}

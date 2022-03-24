@@ -1,0 +1,133 @@
+nav {
+  width: 100%;
+  height: 5vh;
+  box-sizing: border-box;
+  background-color: black;
+  padding: 7px 0;
+  color: white;
+  position: relative;
+}
+
+.nav__container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.logo {
+  display: flex;
+  z-index: 3;
+}
+
+.logo img {
+  width: 17px;
+  margin-right: 2px;
+}
+
+.logo p span {
+  font-weight: 700;
+}
+
+.menu__items {
+  width: 60%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: white;
+}
+
+ul a:hover {
+  opacity: 0.7;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+nav label {
+  display: none;
+}
+
+.mobile-menu__items {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__items ul {
+    display: none;
+  }
+
+  .nav__container i {
+    display: none;
+  }
+
+  .mobile-menu__label {
+    display: block;
+    z-index: 3;
+  }
+
+  .line {
+    background-color: beige;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+
+  #mobile-menu:checked ~ .mobile-menu__label .line:first-child {
+    transform: translateY(7px) rotate(135deg);
+  }
+
+  #mobile-menu:checked ~ .mobile-menu__label .line:last-child {
+    transform: rotate(-135deg);
+  }
+
+  #mobile-menu:checked ~ .mobile-menu__label .line:nth-child(2) {
+    display: none;
+  }
+
+  .mobile-menu__items {
+    display: block;
+    position: absolute;
+    top: -2000px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+    transition: all 0.5s;
+  }
+
+  .mobile-menu__items ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #mobile-menu:checked ~ .mobile-menu__items {
+    top: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .nav__container {
+    width: 80%;
+  }
+}
