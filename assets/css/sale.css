@@ -47,7 +47,7 @@
 }
 @media (orientation: portrait) and (min-width: 600px) and (max-width: 1200px) {
   .sale {
-    height: 70vh;
+    height: 80vh;
   }
   .sale__container {
     width: 80%;

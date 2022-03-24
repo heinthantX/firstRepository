@@ -24,6 +24,10 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+.home__container P {
+  font-size: 1.2rem;
+}
+
 .download a {
   text-decoration: none;
 }
@@ -70,6 +74,10 @@
   .home__container > img {
     width: 40vh;
     margin: auto;
+  }
+
+  .home__container h1 {
+    font-size: 4.5rem;
   }
 }
 
